@@ -81,7 +81,7 @@ All ToF-SIMS data are provided as `.txt` files (tab-separated, one file per meas
 
 1. **Click this link** (opens notebook in Colab):
    ```
-   https://colab.research.google.com/github/ORGNAME/ToFSIMS-depth-profiling-of-PSCs/blob/main/notebooks/depth_profile_analysis.ipynb
+   https://colab.research.google.com/github/X-LAB-UHasselt/ToFSIMS-depth-profiling-of-PSCs/blob/main/notebooks/depth_profile_analysis.ipynb
    ```
 
 2. **In the notebook**, find cell 1 (titled "Google Colab Setup") and:
