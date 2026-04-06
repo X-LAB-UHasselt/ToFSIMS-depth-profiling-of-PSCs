@@ -32,8 +32,7 @@ The repository enables **complete reproduction** of all 20 figures (main manuscr
 ```
 .
 ├── notebooks/
-│   ├── depth_profile_analysis.ipynb           ← Main analysis notebook
-│   └── publication_statistics.ipynb           ← Motivation statistics (ToF-SIMS adoption trends)
+│   └── depth_profile_analysis.ipynb           ← Main analysis notebook
 ├── data/
 │   ├── main/                                  ← Core ToF-SIMS exported measurements
 │   │   ├── MAPI-stack/
@@ -193,7 +192,7 @@ jupyter notebook notebooks/depth_profile_analysis.ipynb
 - Google Colab setup (optional; enables browser-based execution)
 - Imports (matplotlib, scipy, numpy)
 - Publication-quality matplotlib configuration
-- Data loading utility function (inlined from original `utils.py`)
+- Data loading utility function
 
 #### **Main Figures**
 | Figure | Title | Purpose |
@@ -203,17 +202,18 @@ jupyter notebook notebooks/depth_profile_analysis.ipynb
 | **Figure 3** | FACSPI Stack | Depth profiles: complex perovskite, tin-lead alloyed |
 | **Figure 4** | MAPI/Au Peeling | Mechanical peeling experiment validates artifact source |
 | **Figure 5** | Replicate Analysis | Statistical assessment: Control vs. PbI2-treated samples |
-| **Figure 6** | SAM/MAPI Aging | Embedded self-assembled monolayer aging under ambient conditions |
+| **Figure 6** | SAM/MAPI Aging | Self-assembled monolayer aging under ambient conditions |
 
 #### **Supplemental Figures**
 Analysis of special cases and validation:
 - **S1-S7**: Device architecture variants, artifact mechanisms
 - **S8**: Region-based intensity comparisons
 - **S9-S10**: SAM/MAPI and AFM characterization
-- **S11**: Deconvolution analysis (MRI-inspired filters)
+- **S11**: Deconvolution analysis (MRI-inspired)
 - **S12-S14**: GCIB cluster characterization, reference materials
 
-### `publication_statistics.ipynb` (Supporting)
+#### **Miscellaneous** 
+Publication statistics (Supporting)
 
 **Bibliometric motivation**: Tracks adoption of ToF-SIMS in perovskite research (2014-2025) using Google Scholar data.
 
@@ -239,32 +239,6 @@ Running the full notebook generates:
 - **Data processing logs** (validation of loaded measurements)
 
 **Execution time**: ~5-10 minutes
-
----
-
-## Code Quality & Best Practices
-
-This code follows scientific computing best practices:
-
-✅ **Publication-Ready**
-- Figures: 1200 DPI, Arial font, publication dimensions
-- Code: Modular, documented, reproducible
-- Statistics: ANOVA, Shapiro-Wilk, Levene's tests with confidence intervals
-
-✅ **Accessible**
-- Works in Google Colab (no local installation)
-- Minimal dependencies (numpy, scipy, matplotlib only)
-- Clear markdown documentation for each section
-
-✅ **Verifiable**
-- All raw data included
-- No external API calls or web scraping
-- Deterministic (runs identically on any machine)
-
-✅ **Maintainable**
-- Inlined utility functions (no hidden imports)
-- Clear variable naming and comments
-- Organized by figure for easy navigation
 
 ---
 
