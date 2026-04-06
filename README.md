@@ -213,9 +213,7 @@ Analysis of special cases and validation:
 - **S12-S14**: GCIB cluster characterization, reference materials
 
 #### **Miscellaneous** 
-Publication statistics (Supporting)
-
-**Bibliometric motivation**: Tracks adoption of ToF-SIMS in perovskite research (2014-2025) using Google Scholar data.
+Publication statistics (bibliometric motivation): Tracks adoption of ToF-SIMS in perovskite research (2014-2025) using Google Scholar data.
 
 ---
 
@@ -234,7 +232,7 @@ All figures can be exactly reproduced by running the notebook from top to bottom
 ### Expected Output
 
 Running the full notebook generates:
-- **17 figure files** (PDF + PNG, 1200 DPI)
+- **20 figure files** (PDF + PNG, 1200 DPI)
 - **Statistical summaries** (printed to stdout: p-values, confidence intervals)
 - **Data processing logs** (validation of loaded measurements)
 
@@ -249,20 +247,6 @@ Running the full notebook generates:
 **Code**: This repository contains the complete analysis pipeline for reproducing all manuscript figures. The code is open-source and freely available for reuse and adaptation.
 
 **Citation**: If you use this code or data, please cite both the manuscript and this code release:
-
-```bibtex
-@article{Fransaert2026,
-  title={Disentangling Ion Migration from Artifacts in High-Fidelity ToF-SIMS Depth Profiling of Perovskite Solar Cells},
-  author={Fransaert, Nico and Manca, Jean V. and Ahadzadeh, Shabnam and Ruttens, Bart and D'Haen, Jan and Valkenborg, Dirk and Cleuren, Bart and Babayigit, Aslihan H.},
-  journal={Joule},
-  year={2026}
-}
-
-@software{Fransaert2026code,
-  title={Disentangling Ion Migration from Artifacts in High-Fidelity ToF-SIMS Depth Profiling of Perovskite Solar Cells — Code and Data},
-  author={Fransaert, Nico and Manca, Jean V. and Ahadzadeh, Shabnam and Ruttens, Bart and D'Haen, Jan and Valkenborg, Dirk and Cleuren, Bart and Babayigit, Aslihan H.},
-  year={2026}
-}
 
 ---
 
