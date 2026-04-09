@@ -12,7 +12,7 @@ This repository contains the exported data and reproducible code for the manuscr
 >
 > *Nico Fransaert\*, Jean V. Manca, Shabnam Ahadzadeh, Bart Ruttens, Jan D'Haen, Dirk Valkenborg, Bart Cleuren, Bart Vermang, and Aslihan H. Babayigit\**
 >
-> *Joule* (2026) | DOI: [Pending publication]
+> *Joule* (2026)
 
 ### Research Summary
 
@@ -23,7 +23,7 @@ Time-of-flight secondary ion mass spectrometry (ToF-SIMS) is widely used for dep
 - Uncovers **genuine interfacial chemistry** including self-assembled monolayer (SAM) redistribution
 - Sets new standards for **nanoscale characterization** of hybrid semiconductors
 
-The repository enables **complete reproduction** of all 20 figures (main manuscript + supplemental) from exported ToF-SIMS depth profile data.
+The repository enables **complete reproduction** of all figures (main manuscript + supplemental) from exported ToF-SIMS depth profile data.
 
 ---
 
@@ -40,7 +40,7 @@ The repository enables **complete reproduction** of all 20 figures (main manuscr
 │   │   ├── MAPI-Au-peeling/
 │   │   ├── MAPI-2PACz-dip-aging/
 │   │   └── FACSPI-PbI2-treatment/
-│   └── supplemental/                         ← Device architecture variants & controls
+│   └── supplemental/                          ← Device architecture variants & controls
 │       ├── MAPI-in-FACSPI-stack/
 │       ├── FACSPI-in-MAPI-stack/
 │       ├── MAPI-MeO-2PACz-add/
@@ -68,7 +68,7 @@ All ToF-SIMS data are provided as `.txt` files (tab-separated, one file per meas
 - **Data rows**: Sputter time, ion dose, fluence, and intensity for 100+ ion signals
 - **Measurements**: 50+ individual profiles across 10+ sample types
 
-**Format**: Plain text (future-proof)
+**Format**: Plain text
 
 ---
 
@@ -86,13 +86,11 @@ All ToF-SIMS data are provided as `.txt` files (tab-separated, one file per meas
 2. **In the notebook**, find cell 1 (titled "Google Colab Setup") and:
    - Change `RUN_COLAB_SETUP = False` → `RUN_COLAB_SETUP = True`
    - Click **Run cell** (▶ button on the left)
-   - Wait for setup to complete
+   - Wait for setup to complete and follow instructions
 
 3. **Then simply run all remaining cells** (Ctrl+F9 or Runtime → Run all)
 
 4. **View results**: Figures appear inline in the notebook; download if desired
-
-✅ **No installation needed. No coding knowledge required.**
 
 ---
 
@@ -138,7 +136,7 @@ conda create --name tof-sims-depth-profile python=3.10
 conda activate tof-sims-depth-profile
 ```
 
-**Option C: Using pyenv** (advanced; matches this repo's setup)
+**Option C: Using pyenv** (matches this repo's setup)
 ```bash
 # Create version 3.10.5 in pyenv
 pyenv install 3.10.5
@@ -191,29 +189,40 @@ jupyter notebook notebooks/depth_profile_analysis.ipynb
 - Environment initialization
 - Google Colab setup (optional; enables browser-based execution)
 - Imports (matplotlib, scipy, numpy)
-- Publication-quality matplotlib configuration
+- Matplotlib configuration
 - Data loading utility function
 
 #### **Main Figures**
-| Figure | Title | Purpose |
-|--------|-------|---------|
-| **Figure 1** | ToF-SIMS Principle | Foundational method diagram |
-| **Figure 2** | MAPI Stack | Depth profiles: simple device architecture |
-| **Figure 3** | FACSPI Stack | Depth profiles: complex perovskite, tin-lead alloyed |
-| **Figure 4** | MAPI/Au Peeling | Mechanical peeling experiment validates artifact source |
-| **Figure 5** | Replicate Analysis | Statistical assessment: Control vs. PbI2-treated samples |
-| **Figure 6** | SAM/MAPI Aging | Self-assembled monolayer aging under ambient conditions |
+| Figure | Description |
+|--------|---------|
+| **Figure 1** | ToF-SIMS foundational principle and PVK device architectures |
+| **Figure 2** | MAPI Stack: archetypal n–i–p device architecture |
+| **Figure 3** | FACSPI Stack: tin-lead p–i–n device architecture |
+| **Figure 4** | MAPI/Au mechanical peeling experiment validates artifact source |
+| **Figure 5** | Replicate analysis and statistical assessment: Control vs. PbI2-treated samples |
+| **Figure 6** | SAM aging under ambient conditions |
 
 #### **Supplemental Figures**
 Analysis of special cases and validation:
-- **S1-S7**: Device architecture variants, artifact mechanisms
-- **S8**: Region-based intensity comparisons
-- **S9-S10**: SAM/MAPI and AFM characterization
-- **S11**: Deconvolution analysis (MRI-inspired)
-- **S12-S14**: GCIB cluster characterization, reference materials
+| Figure | Description |
+|--------|---------|
+| **Figure S1** | Varying analysis and sputter fluences |
+| **Figure S2** | Sputter-time-controlled depth profiling artifacts |
+| **Figure S3** | Normalized profiles show displaced maxima |
+| **Figure S4** | MAPI in FACSPI stack |
+| **Figure S5** | FACSPI in MAPI stack |
+| **Figure S6** | Comparison of pristine and peeled MAPI films |
+| **Figure S7** | Operational framework for distinguishing genuine migration from artifacts |
+| **Figure S8** | Region-based comparison of summed intensities |
+| **Figure S9** | SAM introduced via additive method |
+| **Figure S10** | AFM characterization for roughness estimation |
+| **Figure S11** | Deconvolution analysis |
+| **Figure S12** | Cluster size distribution |
+| **Figure S13** | Reference Spiro-OMeTAD profiles |
+| **Figure S14** | Reference PCBM profiles |
 
 #### **Miscellaneous** 
-Publication statistics (bibliometric motivation): Tracks adoption of ToF-SIMS in perovskite research (2014-2025) using Google Scholar data.
+Publication statistics (bibliometric motivation) tracks adoption of ToF-SIMS in perovskite research (2014-2025) using Google Scholar data.
 
 ---
 
@@ -233,7 +242,7 @@ All figures can be exactly reproduced by running the notebook from top to bottom
 
 Running the full notebook generates:
 - **20 figure files** (PDF + PNG, 1200 DPI)
-- **Statistical summaries** (printed to stdout: p-values, confidence intervals)
+- **Statistical summaries** (printed to stdout: p-values, other reported values)
 - **Data processing logs** (validation of loaded measurements)
 
 **Execution time**: ~5-10 minutes
@@ -246,13 +255,7 @@ Running the full notebook generates:
 
 **Code**: This repository contains the complete analysis pipeline for reproducing all manuscript figures. The code is open-source and freely available for reuse and adaptation.
 
-**Citation**: If you use this code or data, please cite both the manuscript and this code release:
-
----
-
-## Data and Code Availability
-
-This code repository is archived on Zenodo (https://zenodo.org) for long-term preservation. Please refer to the paper's "Data Availability" statement for access information and citation details.
+**Citation**: If you use this code or data, please cite both the manuscript and this code release.
 
 ---
 
@@ -361,7 +364,7 @@ This code and data are provided under the **MIT License**. You are free to use, 
 This work was supported by:
 - X-LAB, Hasselt University
 - EnergyVille
-- Institute for Materials Research (imo-imomec)
+- IUMAT
 - imec
 - Research Foundation – Flanders (FWO) under mandate grant IDs 11K4324N, 1260022N, 1SA4523N and 1297525N
 - BOF-UHasselt grant ID R-12384
@@ -372,10 +375,10 @@ This work was supported by:
 
 For detailed methodology, results, and context, see the accompanying manuscript:
 
-> Fransaert et al. (2026). *Joule*. [DOI pending]
+> Fransaert et al. (2026). *Joule*. **Disentangling Ion Migration from Artifacts in High-Fidelity ToF-SIMS Depth Profiling of Perovskite Solar Cells**
 
 ---
 
 **Last Updated**: April 2026  
-**Repository Version**: 1.0 (Joule Publication)  
+**Repository Version**: 1.0 
 **Maintained By**: X-LAB, Hasselt University
