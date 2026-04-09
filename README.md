@@ -380,5 +380,5 @@ For detailed methodology, results, and context, see the accompanying manuscript:
 ---
 
 **Last Updated**: April 2026  
-**Repository Version**: 1.0 
+**Repository Version**: 1.0  
 **Maintained By**: X-LAB, Hasselt University
