@@ -63,7 +63,7 @@ The repository enables **complete reproduction** of all figures (main manuscript
 
 ### Data Files
 
-All ToF-SIMS data are provided as `.txt` files (tab-separated, one file per measurement). These are **exported from SurfaceLab 7.3** (post-processed, peak-selected) and include:
+All ToF-SIMS data are provided as `.txt` files (tab-separated, one file per measurement). These are **exported from SurfaceLab 7.3** and include:
 - **Header rows**: Signal names and mass-to-charge ratios (m/z)
 - **Data rows**: Sputter time, ion dose, fluence, and intensity for 100+ ion signals
 - **Measurements**: 50+ individual profiles across 10+ sample types
@@ -251,7 +251,10 @@ Running the full notebook generates:
 
 ## Data & Code Availability
 
-**Data**: All reported ToF-SIMS measurements (exported from SurfaceLab 7.3, post-processed with peak selection) are provided in this repository under the `data/` directory.
+**Data**: All reported ToF-SIMS measurements (exported from SurfaceLab 7.3) are provided in this repository under the `data/` directory. The raw ToF-SIMS data used in this study is archived on Zenodo:
+- DOI: [10.5281/zenodo.19489560](https://doi.org)
+- Format: IONTOF proprietary (.itax, .itmx, .itm) and open-standard (.imzML).
+- Size: ~38 GB compressed (requires ~320 GB uncompressed).
 
 **Code**: This repository contains the complete analysis pipeline for reproducing all manuscript figures. The code is open-source and freely available for reuse and adaptation.
 
@@ -355,17 +358,13 @@ This repository is frozen for the publication. For questions or improvements, co
 
 ## License
 
-This code and data are provided under the **MIT License**. You are free to use, modify, and distribute for research and commercial purposes, with attribution.
+This code and data are provided under the **MIT License**. You are free to use, modify, and distribute for research and commercial purposes, with attribution.  
 
 ---
 
 ## Acknowledgments
 
 This work was supported by:
-- X-LAB, Hasselt University
-- EnergyVille
-- IUMAT
-- imec
 - Research Foundation – Flanders (FWO) under mandate grant IDs 11K4324N, 1260022N, 1SA4523N and 1297525N
 - BOF-UHasselt grant ID R-12384
 
@@ -380,5 +379,4 @@ For detailed methodology, results, and context, see the accompanying manuscript:
 ---
 
 **Last Updated**: April 2026  
-**Repository Version**: 1.0  
-**Maintained By**: X-LAB, Hasselt University
+**Created By**: Nico Fransaert, X-LAB, Hasselt University
