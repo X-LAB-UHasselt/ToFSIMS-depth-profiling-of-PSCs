@@ -3,7 +3,7 @@
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![Code: Publication-Ready](https://img.shields.io/badge/code-publication--ready-brightgreen)
-[![DOI](https://zenodo.org)](https://doi.org/10.5281/zenodo.19489560)
+[![Raw Data](https://shields.io)](https://doi.org/10.5281/zenodo.19489560)
 
 ## Overview
 
