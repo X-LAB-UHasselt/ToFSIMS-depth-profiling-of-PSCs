@@ -8,7 +8,7 @@
 
 This repository contains the exported data and reproducible code for the manuscript:
 
-> **Disentangling Ion Migration from Artifacts in High-Fidelity ToF-SIMS Depth Profiling of Perovskite Solar Cells**
+> **Disentangling ion migration from artifacts in high-fidelity ToF-SIMS depth profiling of perovskite solar cells**
 >
 > *Nico Fransaert\*, Jean V. Manca, Shabnam Ahadzadeh, Bart Ruttens, Jan D'Haen, Dirk Valkenborg, Bart Cleuren, Bart Vermang, and Aslihan H. Babayigit\**
 >
@@ -374,7 +374,7 @@ This work was supported by:
 
 For detailed methodology, results, and context, see the accompanying manuscript:
 
-> Fransaert et al. (2026). *Joule*. **Disentangling Ion Migration from Artifacts in High-Fidelity ToF-SIMS Depth Profiling of Perovskite Solar Cells**
+> Fransaert et al. (2026). *Joule*. **Disentangling ion migration from artifacts in high-fidelity ToF-SIMS depth profiling of perovskite solar cells**
 
 ---
 
